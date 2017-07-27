@@ -1,7 +1,6 @@
 {
   "name": "grushevsky",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "gulp": "^3.9.1"
@@ -26,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/88Sokoloff/grushevsky/issues"
   },
-  "homepage": "https://github.com/88Sokoloff/grushevsky#readme"
+  "homepage": "https://github.com/88Sokoloff/grushevsky#readme",
+  "description": ""
 }
