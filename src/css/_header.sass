@@ -1,14 +1,13 @@
 @import "variables"
-<<<<<<< HEAD:src/css/header.sass
+
 
 body
   padding: 0
   margin: 0
   font-family: $font_primary
   font-size: 14px
-  line-height: 1.4
-=======
->>>>>>> da8f0d9de3dfcaf86e0865c1aadfa06ae741cf9d:src/css/_header.sass
+  line-height: 1.3
+
 header
   background-color: $background_pink
 
@@ -31,14 +30,18 @@ header
   flex-direction: column
 
 .header_right a
-	text-decoration: none
-	color: $input_border_color
+  text-decoration: none
+  color: $input_border_color
+.header_lang
+  display: flex
+  justify-content: space-around
+  .old_site a
+    color: $primary-color 
 
 .header_lang
-  text-align: right
-  font-size: 18px
+  font-size: $font_size_a
   a:hover
-    color: $primary-color
+    color: #88aae0
 
 .header-fixed
   position: fixed
@@ -71,6 +74,7 @@ header
 .search
   .input:focus
     border-bottom: 1px solid $primary-color
+
   .submit
     position: relative
     top: 7px
@@ -84,6 +88,8 @@ header
     margin: -33px 0 0 -55px
     &:hover
       opacity: 0.8
+      .search_btn
+        border-bottom: 1px solid $primary-color
 
 .sprites
   margin-left: 20px
@@ -95,18 +101,22 @@ header
       display: inline-block
     a
       display: inline-block
+      opacity: 0.5
+      background-size: cover
       width: 32px
       height: 32px
   .social_youtube
-    background: url(../img/sprite_2.png) 0 0 no-repeat
+    background: url(../img/youtube.svg) 0 0 no-repeat
   .social_insta
-    background: url(../img/sprite_2.png) -32px 0 no-repeat
+    background: url(../img/instagram.svg) 0 0 no-repeat
   .social_twitter
-    background: url(../img/sprite_2.png) -64px 0 no-repeat
+    background: url(../img/twitter.svg) 0 0 no-repeat
   .social_fb
-    background: url(../img/sprite_2.png) -96px 0 no-repeat
+    background: url(../img/facebook.svg) 0 0 no-repeat
+  .social_gp
+    background: url(../img/google-plus.svg) 0 0 no-repeat
   .header_social a:hover
-    opacity: 0.4
+    opacity: 1
 
 // MAIN MENU//
 

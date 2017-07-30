@@ -1,7 +1,8 @@
 @import "variables"
-body
-	padding: 0
-	margin: 0
+@import "header.sass"
+@import "nav.sass"
+@import "section_info.sass"
+
 .wrap
 	width: 960px
 	margin: 0 auto
@@ -10,15 +11,25 @@ footer
   background: $background_footer
 
 .footer_logo
-  width: 140px
+  width: 50px
 
-img
+footer img
   display: inline-block
   width: 140px
 
 footer li
   display: inline-block
   list-style: none
+
+.footer_sponsor_1
+	display: inline
+	margin-left: 150px
+
+.footer_sponsor_1	a
+	text-decoration: none
+  font-size: $font_size_a
+  color: $color_a_hover
+
 
 .social
   float: right
@@ -29,40 +40,42 @@ footer li
 footer
   .social a
     display: inline-block
+    opacity: 0.5
+    background-size: cover
     width: 32px
     height: 32px
   .social_youtube
-    background: url(../img/sprite_2.png) 0 0 no-repeat
+    background: url(../img/youtube.svg) 0 0 no-repeat
   .social_insta
-    background: url(../img/sprite_2.png) -32px 0 no-repeat
+    background: url(../img/instagram.svg) 0 0 no-repeat
   .social_twitter
-    background: url(../img/sprite_2.png) -64px 0 no-repeat
+    background: url(../img/twitter.svg) 0 0 no-repeat
   .social_fb
-    background: url(../img/sprite_2.png) -96px 0 no-repeat
+    background: url(../img/facebook.svg) 0 0 no-repeat
   .social_gp
     background: url(../img/google-plus.svg) 0 0 no-repeat
   .social a:hover
-    box-sizing: border-box
-    border-bottom: 2px solid #FFF7ED
+    opacity: 1
 
-.flexbox_footer
+.flexbox_footer_bottom
   display: flex
   justify-content: space-between
-
+  align-items: flex-end
+.sponsors	a
+	margin-left: 15px
 .copyright
   display: block
   margin: 0
   padding: 20px 0 0 0
 
-.footer_contact
+.old_site, .e_archive 
+	text-align: right
 
-.old_site, .footer_contact
-  padding: 10px
-
-.copyright a, .old_site a, .footer_contact a
+.sponsors	a, .copyright a, .old_site a, .footer_contact a, .e_archive a, 
   text-decoration: none
-  color: #FFF7ED
+  color: $color_hover
+  font-size: $font_size_a
 
-.copyright a:hover, .old_site a:hover, .footer_contact a:hover
-  text-decoration: underline
-  color: blue
+.copyright , .old_site , .footer_contact, .e_archive, .sponsors
+	a:hover 
+  	color: $color_a_hover
