@@ -1,0 +1,84 @@
+@import "variables"
+
+.info
+	margin: 30px 0
+	
+.info_flex
+	display: flex
+	justify-content: space-between
+.name_info
+	display: flex
+	justify-content: space-around
+.top_title
+	width: 100%
+.name_info p
+	color: $color_nav
+	font-size: 22px
+	font-weight: bold
+.name_info p:hover
+	color: $color_a_hover
+
+.wrapper	
+	width: 31%
+	border: 1px solid $background_pink
+	color: $primary-color
+	background-color: $background_color_section_info
+
+.wrapper:hover 
+	border: 1px solid $color_a_hover
+	border-radius: 5px
+
+.title
+	font-size: 20px
+.title:hover a
+	color: $color_a_hover
+
+.title, .description
+	text-align: center
+
+.info-image
+	height: 150px
+	background: url(../img/news_1.jpg) 0 0 no-repeat
+	background-size: cover
+
+.description
+	padding: 20px 0
+
+.description:hover a
+	color: $color_a_hover
+
+.news .description
+	position: relative
+
+.news .description:after
+	content: " "
+	position: absolute
+	top: -60px
+	left: 0
+	border: 30px solid transparent
+	border-bottom: 30px solid $background_color_section_info
+
+.scientific_collections .description
+	position: relative
+
+.scientific_collections .description:after
+	content: " "
+	position: absolute
+	top: -60px
+	left: 50%
+	margin-left: -30px
+	border: 30px solid transparent
+	border-bottom: 30px solid $background_color_section_info
+.collections .description
+	position: relative
+
+.collections .description:after
+	content: " "
+	position: absolute
+	top: -60px
+	right: 0
+	border: 30px solid transparent
+	border-bottom: 30px solid $background_color_section_info
+.info a 
+	text-decoration: none
+	color: $primary-color
