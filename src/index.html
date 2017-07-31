@@ -6,6 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+	<script>
+		$(document).ready(function(){
+ 		 $(".owl-carousel").owlCarousel();
+		});
+	</script>
+
 </head>
 <body>
 	<header>
@@ -32,7 +38,7 @@
 					</div>
 					<div class="search_form">
 						<form action="" method="post" class="search">
-			  				<input type="search" type="text" name="" placeholder="Пошук" class="input" />
+			  				<input type="search" type="text" name="" placeholder="Пошук" class="input">
 			 				<div class="search_btn"><img src="https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png" alt="search"></div>
 						</form>
 					</div>
@@ -79,9 +85,25 @@
 	    </ul>
 	</nav>
 
-	<section class="info">
-	<div class="wrap">
+	<div class="slider_top">
+		<div class="wrap">
+			<div class="slide"> </div>
+		</div>
+	</div>
+
+
+
+	<section class="info">	
+		<div class="wrap">
+
+			<section class="name_info">
+				<a href="#"><p class="top_title">Новини</p></a>
+				<a href="#"><p class="top_title">Наукові студії</p></a>
+				<a href="#"><p class="top_title">Колекції</p></a>
+			</section>
+
 		<div class="info_flex">
+
 				<div class="wrapper news">
 					<p class="title"><a href="#">Как нарисовать изогнутую линию на css?</a></p>
 					<div class="info-image news_image"></div>
@@ -93,15 +115,36 @@
 					<div class="info-image news_image"></div>
 					<div class="description"><a href="#">Разрешается использовать одно, два, три или четыре значения, перечисляя их через пробел (табл. 1). Также допустимо писать два значения через слэш (/).</a></div>
 				</div>
+
 				<div class="wrapper collections">
 					<p class="title"><a href="#">Как нарисовать изогнутую линию на css?</a></p>
 					<div class="info-image news_image"></div>
 					<div class="description"><a href="#">Разрешается использовать одно, два, три или четыре значения, перечисляя их через пробел (табл. 1). Также допустимо писать два значения через слэш (/).</a></div>
 				</div>
 			</div>
+
 		</div>
 	</section>
 
+	<section class="feedback">
+		<div class="wrap">
+			 <div class="flex_feedback">
+				<div class="inputs">
+					 <form action="#" method="post">
+						<p>Спланувати візит:</p>
+						<input type="text" name="name" placeholder="Им'я" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<input type="date" name="date" required>
+						<textarea name="comment" id="comment" cols="40" rows="10" placeholder="Залишити коментарій"></textarea>
+						<input type="submit" name="name" value="Відправити">
+					</form>
+				</div>
+				<div class="maps">
+					
+				</div>
+			</div>
+		</div>
+	</section>
 
 		<footer>
 			<div class="wrap"> 			          
@@ -138,6 +181,9 @@
 		    </div>
     </footer>
 
-	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script src="js/index.js"></script>
+
 </body>
 </html>
