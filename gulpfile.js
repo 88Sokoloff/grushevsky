@@ -39,7 +39,7 @@ gulp.task('sprites', function () {
 });
 
 gulp.task('scripts', function() {  
-    return gulp.src('src/js/*')
+    return gulp.src('src/js/index.js')
         .pipe(concat('scripts.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.stream());

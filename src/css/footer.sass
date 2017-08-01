@@ -1,0 +1,83 @@
+@import "variables"
+@import "header.sass"
+@import "nav.sass"
+@import "section_info.sass"
+@import "slider_top.sass"
+@import "feedback.sass"
+
+.wrap
+	width: 960px
+	margin: 0 auto
+footer
+  padding: 15px 0 25px 0
+  background: $background_footer
+
+.footer_logo
+  width: 50px
+
+footer img
+  display: inline-block
+  width: 140px
+
+footer li
+  display: inline-block
+  list-style: none
+
+.footer_sponsor_1
+	display: inline
+	margin-left: 150px
+
+.footer_sponsor_1	a
+	text-decoration: none
+  font-size: $font_size_a
+  color: $color_a_hover
+
+
+.social
+  float: right
+  &:after
+    content: ''
+    clear: both
+
+footer
+  .social a
+    display: inline-block
+    opacity: 0.5
+    background-size: cover
+    width: 32px
+    height: 32px
+  .social_youtube
+    background: url(../img/youtube.svg) 0 0 no-repeat
+  .social_insta
+    background: url(../img/instagram.svg) 0 0 no-repeat
+  .social_twitter
+    background: url(../img/twitter.svg) 0 0 no-repeat
+  .social_fb
+    background: url(../img/facebook.svg) 0 0 no-repeat
+  .social_gp
+    background: url(../img/google-plus.svg) 0 0 no-repeat
+  .social a:hover
+    opacity: 1
+
+.flexbox_footer_bottom
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+.sponsors	a
+	margin-left: 15px
+.copyright
+  display: block
+  margin: 0
+  padding: 20px 0 0 0
+
+.old_site, .e_archive 
+	text-align: right
+
+.sponsors	a, .copyright a, .old_site a, .footer_contact a, .e_archive a, 
+  text-decoration: none
+  color: $color_hover
+  font-size: $font_size_a
+
+.copyright , .old_site , .footer_contact, .e_archive, .sponsors
+	a:hover 
+  	color: $color_a_hover
