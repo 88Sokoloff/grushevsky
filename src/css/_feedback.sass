@@ -14,21 +14,46 @@ form
 	p
 	padding: 10px 10px
 	font-size: 16px
-	color: $primary-color
 .feedback	input[type="text"], input[type="email"]
 	margin: 10px 0
 	padding: 10px
 	width: 90%	
 	border: 0
-	border-bottom: 1px solid black
+	border-bottom: 1px solid $input_border_color
 	background: none
 	outline: none
+
 .feedback p	input[type="text"]
-	width: 25%
+	width: 22%
 .maps
 	margin: 50px 0
 	width: 60%
 	height: 400px
 	background-color: #000
-textarea
-	resize: none;
+
+.feedback textarea
+	padding: 5px 10px
+	resize: none
+	outline-color: $primary-color
+	border-color: $input_border_color
+
+.feedback input:focus
+	border-bottom: 1px solid $primary-color
+
+.feedback input[type="submit"]
+	background-color: $primary-color
+	border: none
+	display: inline-block
+	width: 40%
+	color: $background_pink
+	height: 40px
+	border-radius: 40px
+
+.feedback form input[type="submit"]
+	margin: 10px 30%
+
+.feedback form p 
+	font-size: 20px
+	font-family: $font_primary
+	color: $primary-color
+
