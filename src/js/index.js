@@ -2,12 +2,12 @@ $(document).ready(function(){
 
 $(".owl-carousel").owlCarousel({
     navigation : false, 
-    slideSpeed : 1000,
+    slideSpeed : 5000,
     paginationSpeed : 1000,
     singleItem: true,
     pagination: true,
     rewindSpeed: 1000,
-    autoPlay: 6000,
+    autoPlay: 7000,
     dots: true,
     navText : ["<",">"]
 });
@@ -20,9 +20,22 @@ $(".owl-carouse2").owlCarousel({
     singleItem: true,
     pagination: true,
     rewindSpeed: 1000,
-    autoPlay: 8000,
+    autoPlay: 3000,
     dots: true
 });
+$(".owl-carouse3").owlCarousel({
+    items:3,
+    autoplayHoverPause: true,
+    navigation : false, 
+    slideSpeed : 1000,
+    paginationSpeed : 1000,
+    singleItem: true,
+    pagination: false,
+    rewindSpeed: 1000,
+    autoPlay: 2000,
+    dots: true
+});
+
 $( "#datepicker" ).datepicker();
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
