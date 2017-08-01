@@ -6,11 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
-	<script>
-		$(document).ready(function(){
- 		 $(".owl-carousel").owlCarousel();
-		});
-	</script>
 
 </head>
 <body>
@@ -85,11 +80,27 @@
 	    </ul>
 	</nav>
 
-	<div class="slider_top">
-		<div class="wrap">
-			<div class="slide"> </div>
+
+
+	<div class="wrap">
+				<div id="owl-example" class="owl-carousel">
+				  	<div class="owl-slide" style="background-image: url('http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/raccoon-road.ngsversion.1396530745521.jpg')">
+						  <div class="wrapper">
+						  	<div class="owl--text"></div>
+						  </div>
+						</div>
+				  	<div class="owl-slide" style="background-image: url('http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/raccoon-grass.ngsversion.1396530745057.jpg')">
+							<div class="wrapper">
+							  	<div class="owl--text"></div>
+						 </div>
+						</div>
+				  	<div class="owl-slide" style="background-image: url('https://c2.staticflickr.com/4/3741/11245402376_4084b73478_b.jpg')">
+							<div class="wrapper">
+							  	<div class="owl--text"></div>
+						 </div>
+						</div>
+				</div>
 		</div>
-	</div>
 
 
 
@@ -105,11 +116,24 @@
 		<div class="info_flex">
 
 				<div class="wrapper news">
-					<p class="title"><a href="#">Как нарисовать изогнутую линию на css?</a></p>
-					<div class="info-image news_image"></div>
-					<div class="description"><a href="#">Разрешается использовать одно, два, три или четыре значения, перечисляя их через пробел (табл. 1). Также допустимо писать два значения через слэш (/).</a></div>
+				<div id="owl-example1" class="owl-carouse2">
+			  	<div class="owl-slide">
+							<p class="title"><a href="#">Как нарисовать изогнутую линию на css?</a></p>
+							<div class="info-image news_image"></div>
+							<div class="description"><a href="#">Разрешается использовать одно, два, три или четыре значения, перечисляя их через пробел (табл. 1). Также допустимо писать два значения через слэш (/).</a></div>
+					</div>
+					<div class="owl-slide">
+							<p class="title"><a href="#">Как нарисовать изогнутую линию на css?</a></p>
+							<div class="info-image news_image"></div>
+							<div class="description"><a href="#">Разрешается использовать одно, два, три или четыре значения, перечисляя их через пробел (табл. 1). Также допустимо писать два значения через слэш (/).</a></div>
+						</div>
+					<div class="owl-slide">
+							<p class="title"><a href="#">Как нарисовать изогнутую линию на css?</a></p>
+							<div class="info-image news_image"></div>
+							<div class="description"><a href="#">Разрешается использовать одно, два, три или четыре значения, перечисляя их через пробел (табл. 1). Также допустимо писать два значения через слэш (/).</a></div>
+						</div>
+					</div>
 				</div>
-
 				<div class="wrapper scientific_collections">
 					<p class="title"><a href="#">Как нарисовать изогнутую линию на css?</a></p>
 					<div class="info-image news_image"></div>
@@ -132,9 +156,9 @@
 				<div class="inputs">
 					 <form action="#" method="post">
 						<p>Спланувати візит:</p>
-						<input type="text" name="name" placeholder="Им'я" required>
+						<input type="text" name="name" placeholder="Им'я" autofocus required>
 						<input type="email" name="email" placeholder="Email" required>
-						<input type="date" name="date" required>
+						<p>Дата:<input type="text" id="datepicker" required></p>
 						<textarea name="comment" id="comment" cols="40" rows="10" placeholder="Залишити коментарій"></textarea>
 						<input type="submit" name="name" value="Відправити">
 					</form>
@@ -182,8 +206,13 @@
     </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-	<script src="js/index.js"></script>
+	<script src="js/scripts.js"></script>
 
 </body>
 </html>

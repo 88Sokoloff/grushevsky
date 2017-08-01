@@ -1,16 +1,19 @@
+$(document).ready(function(){
+
 $(".owl-carousel").owlCarousel({
-    navigation : true, 
+    navigation : false, 
     slideSpeed : 1000,
     paginationSpeed : 1000,
     singleItem: true,
     pagination: true,
     rewindSpeed: 1000,
-    autoPlay: 8000,
+    autoPlay: 6000,
     dots: true,
-     nav    : true,
     navText : ["<",">"]
 });
 $(".owl-carouse2").owlCarousel({
+    items:1,
+    autoplayHoverPause: true,
     navigation : false, 
     slideSpeed : 1000,
     paginationSpeed : 1000,
@@ -20,7 +23,7 @@ $(".owl-carouse2").owlCarousel({
     autoPlay: 8000,
     dots: true
 });
-
+$( "#datepicker" ).datepicker();
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
   //  console.log(scroll);
@@ -30,4 +33,5 @@ $(window).scroll(function() {
     } else {
         $(".main-menu").parent().removeClass("header-fixed");
     }
+});
 });
