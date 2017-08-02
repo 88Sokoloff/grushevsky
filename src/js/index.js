@@ -1,40 +1,47 @@
 $(document).ready(function(){
 
-$(".owl-carousel").owlCarousel({
-    navigation : false, 
-    slideSpeed : 5000,
-    paginationSpeed : 1000,
-    singleItem: true,
-    pagination: true,
-    rewindSpeed: 1000,
-    autoPlay: 7000,
-    dots: true,
-    navText : ["<",">"]
-});
-$(".owl-carouse2").owlCarousel({
-    items:1,
-    autoplayHoverPause: true,
-    navigation : false, 
-    slideSpeed : 1000,
-    paginationSpeed : 1000,
-    singleItem: true,
-    pagination: true,
-    rewindSpeed: 1000,
-    autoPlay: 3000,
-    dots: true
-});
-$(".owl-carouse3").owlCarousel({
-    items:3,
-    autoplayHoverPause: true,
-    navigation : false, 
-    slideSpeed : 1000,
-    paginationSpeed : 1000,
-    singleItem: true,
-    pagination: false,
-    rewindSpeed: 1000,
-    autoPlay: 2000,
-    dots: true
-});
+        var owl = $('.owl-carousel');
+
+        owl.owlCarousel({
+            items:1,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true
+        });
+
+        var owl = $('.owl-carouse2');
+
+        owl.owlCarousel({
+            items:1,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true
+        });
+
+$('.owl-carouse3').owlCarousel({
+            autoplay:true,
+            autoplayTimeout:1000,
+            loop:true,
+            pagination: false,
+            margin:10,
+            nav:false,
+            dots: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
 
 $( "#datepicker" ).datepicker();
 $(window).scroll(function() {    
