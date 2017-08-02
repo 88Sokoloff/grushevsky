@@ -20,9 +20,8 @@ gulp.task ('img', function() {
 });
 
 gulp.task ('css', ['sprites'], function() {
-  return gulp.src('src/css/*')
+  return gulp.src('src/css/main.sass')
     .pipe(sass())
-    .pipe(concatCss("main.css"))
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.stream());
 });
