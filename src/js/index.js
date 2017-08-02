@@ -24,23 +24,14 @@ $(document).ready(function(){
 
 $('.owl-carouse3').owlCarousel({
             autoplay:true,
+            autoWidth:true,
             autoplayTimeout:1000,
             loop:true,
             pagination: false,
             margin:10,
             nav:false,
             dots: false,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
+
         })
 
 $( "#datepicker" ).datepicker();
