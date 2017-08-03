@@ -2,11 +2,83 @@
 	margin: 50px 0
 
 .article--image
-		width: 90%
-		height: 350px
-		margin: 30px auto 
-		background: url(../img/news_1.jpg) 50% 50% no-repeat
+	position: relative
+	width: 90%
+	height: 350px
+	margin: 30px auto 
+	background: url(../img/news_1.jpg) 50% 50% no-repeat
 	
 .article--text
-		text-align: justify
-		margin-bottom: 45px
+	text-align: center
+	width: 80%
+	margin: 25px auto 45px
+
+.article_form
+	width: 75%
+	margin: 0 auto
+.article_recall
+	display: block
+.share
+	width: 20%
+	height: 30px
+	margin: 0 30px 25px 
+	cursor: pointer
+.share_fb
+	background: url(../img/share_fb.svg) 50% 50%
+	background-size: cover
+.share_twitter
+	background: url(../img/share_twitter.svg) 50% 50%
+	background-size: cover
+
+#article_comment
+	width: 100%
+	height: 150px
+	padding: 10px
+	box-sizing: border-box
+	resize: none
+
+.leave_comment
+	background-color: $primary-color
+	font-family: $font_primary
+	border: none
+	display: block
+	width: 30%
+	height: 40px
+	margin: 10px auto
+	color: $background_pink
+	border-radius: 40px
+	outline: none
+	font-size: 16px
+	transition: all 0.2s ease-in-out
+	cursor: pointer
+	&:hover
+		border: 0px solid $color_a_hover
+		box-shadow: 0 0 4px 4px $color_a_hover
+		background-color: $background_pink
+		color: $primary-color
+
+.visitor_comments
+	width: 75%
+	margin: 50px auto
+	border-top: 1px solid $primary_color
+	h2
+		margin-left: 15px
+		color: $primary_color
+.visitor_comment
+	height: 112px
+	padding: 5px
+	margin-bottom: 15px
+	border: 1px solid $input_border_color
+	box-sizing: border-box
+.visitor_photo
+	float: left
+	width: 100px
+	height: 100px
+	background-color: #f00
+.comment_text
+	float: right
+	width: calc(100% - 115px)
+	h3
+		margin: 5px
+	p
+		margin: 0
