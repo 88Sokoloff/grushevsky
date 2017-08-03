@@ -39,7 +39,7 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
   //  console.log(scroll);
 
-    if (scroll >= 160) {
+    if (scroll >= 135) {
         $(".main-menu").parent().addClass("header-fixed");
     } else {
         $(".main-menu").parent().removeClass("header-fixed");
@@ -60,4 +60,9 @@ $('#scrolltotop').on('click', function(){
     up();
     return false;
 })
+$(document).ready(function(){
+    $('.overlay').click(function() {
+        $(this).remove();
+    });
+});
 
