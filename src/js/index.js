@@ -52,7 +52,7 @@ $('.owl-carouse5').owlCarousel({
 
         })
 
-$( "#datepicker" ).datepicker();
+$( "#datepicker" ).datepicker({ dateFormat: 'dd-mm-yy' });
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
   //  console.log(scroll);
@@ -63,7 +63,7 @@ $(window).scroll(function() {
         $(".main-menu").parent().removeClass("header-fixed");
     }
 });
-});
+
 var t;
 function up() {
    var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
@@ -74,22 +74,17 @@ function up() {
    return false;
 }
 
-
-$(document).ready(function(){
-
-$(window).scroll(function(){
-if ($(this).scrollTop() > 300) {
-$('#scrolltotop').fadeIn();
-} else {
-$('#scrolltotop').fadeOut();
-}
-});
-
 $('#scrolltotop').click(function(){
 $("html, body").animate({ scrollTop: 0 }, 500);
 return false;
 });
 
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 300) {
+        $('#scrolltotop').fadeIn();
+    } else {
+        $('#scrolltotop').fadeOut();
+    }
 });
 
-
+});
