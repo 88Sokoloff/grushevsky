@@ -12,52 +12,44 @@
 	</head>
 	<body>
 
-		<header>
-			<!-- Зачем и врап, и хедер контейнер? -->
-			<div class="wrap">
-				<div class="header_container">
-					<!-- ссылке лого можно задать блок и фон. стили не понял -->
-					<div class="logo">
-						<a class="header_logo" href="index.html">
-							<img src="img/header_logo.png" alt="Логотип компании не удалось загрузить">
-						</a>
-					</div>
-					<div class="header_contact">
-						<p>Музей працює щоденно, крім понеділка, з 10:00 до 18:00<br/>
-						   Київ, вул. Паньківська, буд. 9, 01033</p>
-					</div>
-					<div class="header_right">
-						<div class="header_lang">
-							<!-- вместо оборота в параграф можно задать ссылке блок+паддинг -->
-							<p class="old_site"><a href="http://vuam.org.ua/uk/802:%D0%86%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%B0_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE">Минула версія сайту</a></p>
-							<a class="ua" href="https://translate.google.com.ua/?hl=ru&tab=wT">
-								УКР
-							</a>
-							<a class="gb" href="https://translate.google.com.ua/?hl=ru&tab=wT">
-								ENG
-							</a>
-						</div>
-						<div class="search_form">
-							<form action="#" method="post" class="search">
-			  				<input type="search" type="text" name="search" placeholder="Пошук" class="input"/>
-				 				<div class="search_btn"><img src="https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png" alt="search"></div>
-							</form>
-						</div>
-						<!-- юэл тоже блок который можно позиционировать без внешнего дива -->
-						<div class="sprites">
-							<ul class="header_social">
-								<!-- хорошо бы уже поузнавать и вписать ссылки на социалки -->
-				        <li><a href="#" class="social_youtube"></a></li>
-				        <li><a href="#" class="social_insta"></a></li>               
-				        <li><a href="#" class="social_twitter"></a></li>
-				        <li><a href="#" class="social_fb"></a></li> 
-				        <li><a href="#" class="social_gp"></a></li>                
-				    	</ul>
-						</div>
+	<header>
+			<div class="header_top">
+				<div class="wrap">
+					<div class="inline header_top_info">Музей працює щоденно, крім понеділка, з 10:00 до 18:00. Київ, вул. Паньківська, буд. 9, 01033</div>
+					<div class="inline header_top_old_site"><a href="http://vuam.org.ua/uk/802:%D0%86%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%B0_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE">Минула версія сайту</a></div>
+					<div class="lang_block">
+						<div class="inline header_top_ua"><a href="https://translate.google.com.ua/?hl=ru&tab=wT" target="new blank">укр</a></div>
+						<div class="inline header_top_eng"><a href="https://translate.google.com.ua/?hl=ru&tab=wT" target="new blank">eng</a></div>
 					</div>
 				</div>
 			</div>
-		</header>
+			<div class="wrap">
+			<div class="header_container">
+				<div class="logo">
+					<a class="header_logo" href="#" target="new blank">
+					<img src="img/header_logo.png" alt="Логотип компании не удалось загрузить">
+					</a>
+				</div>
+					<div class="header_right_block">
+					<div class="search_form">
+						<form action="" method="post" class="search">
+			  				<input type="search" type="text" name="" placeholder="Пошук" class="input"/>
+			 				<div class="search_btn"><img src="https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png" alt="searcj"></div>
+
+						</form>
+					</div>
+					<div class="sprites">
+						<ul class="header_social">
+					        <li><a href="#" class="social_youtube"></a></li>
+					        <li><a href="#" class="social_insta"></a></li>               
+					        <li><a href="#" class="social_twitter"></a></li>
+					        <li><a href="#" class="social_fb"></a></li>                 
+				    	</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 		<nav>
 			<ul class="main-menu">
 				<li><a href="index.html" class="active_nav">Головна</a></li>
@@ -213,12 +205,12 @@
           <script src="js/scripts.js"></script>
      </div>
     </footer>
-		</body>	
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script src="http://www.jq22.com/demo/OwlCarousel2/owlcarousel/owl.carousel.js?v=beta.1.8"></script>
 		<script src="js/scripts.js"></script>
-
-	
+		
+		</body>	
 </html>
