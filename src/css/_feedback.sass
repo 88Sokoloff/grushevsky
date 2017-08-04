@@ -1,13 +1,11 @@
-@import "variables"
-
 .feedback
-	background-color: $background_pink
+	background-color: #f2f2f2
 .flex_feedback
 	display: flex
 	justify-content: space-between
-form
+.feedback form
 	padding: 10px
-.inputs
+.feedback .inputs
 	display: flex
 	flex-direction: colums
 	width: 30%
@@ -17,7 +15,7 @@ form
 .feedback	input[type="text"], input[type="email"]
 	margin: 10px 0
 	padding: 10px
-	width: 90%	
+	width: 92%	
 	border: 0
 	border-bottom: 1px solid $input_border_color
 	background: none
@@ -25,14 +23,22 @@ form
 	font-size: $text_size_input
 
 .feedback p	input[type="text"]
-	width: 22%
-.maps
+	width: 30%
+
+.feedback .maps
 	margin: 50px 0
 	width: 60%
-	height: 400px
-	background-color: #000
+	
+.overlay 
+	background: transparent
+	position: relative
+	width: 100%
+	height: 470px
+	top: 470px
+	margin-top: -470px
 
 .feedback textarea
+	width: 90%
 	padding: 5px 10px
 	resize: none
 	outline-color: $primary-color
@@ -47,8 +53,8 @@ form
 	background-color: $primary-color
 	font-family: $font_primary
 	border: none
-	display: inline-block
-	width: 40%
+	display: block
+	width: 150px
 	color: $background_pink
 	height: 40px
 	border-radius: 40px
@@ -64,7 +70,7 @@ form
 	color: $primary-color
 
 .feedback form input[type="submit"]
-	margin: 10px 30%
+	margin: 10px auto
 
 .feedback form p 
 	font-size: 20px

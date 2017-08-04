@@ -1,65 +1,90 @@
 $(document).ready(function(){
 
-$(".owl-carousel").owlCarousel({
-    navigation : false, 
-    slideSpeed : 5000,
-    paginationSpeed : 1000,
-    singleItem: true,
-    pagination: true,
-    rewindSpeed: 1000,
-    autoPlay: 7000,
-    dots: true,
-    navText : ["<",">"]
-});
-$(".owl-carouse2").owlCarousel({
-    items:1,
-    autoplayHoverPause: true,
-    navigation : false, 
-    slideSpeed : 1000,
-    paginationSpeed : 1000,
-    singleItem: true,
-    pagination: true,
-    rewindSpeed: 1000,
-    autoPlay: 3000,
-    dots: true
-});
-$(".owl-carouse3").owlCarousel({
-    items:3,
-    autoplayHoverPause: true,
-    navigation : false, 
-    slideSpeed : 1000,
-    paginationSpeed : 1000,
-    singleItem: true,
-    pagination: false,
-    rewindSpeed: 1000,
-    autoPlay: 2000,
-    dots: true
-});
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items:1,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:7000,
+            autoplayHoverPause:true
+        });
 
-$( "#datepicker" ).datepicker();
+        var owl = $('.owl-carouse2');
+        owl.owlCarousel({
+            items:1,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true
+        });
+
+        var owl = $('.owl-carouse3');
+        owl.owlCarousel({
+            items:1,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true
+        });
+
+        var owl = $('.owl-carouse4');
+        owl.owlCarousel({
+            items:1,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:3500,
+            autoplayHoverPause:true
+        });
+
+$('.owl-carouse5').owlCarousel({
+            autoplay:true,
+            autoWidth:true,
+            autoplayTimeout:1000,
+            loop:true,
+            pagination: false,
+            margin:10,
+            nav:false,
+            dots: false,
+
+        })
+
+$( "#datepicker" ).datepicker({ dateFormat: 'dd-mm-yy' });
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
   //  console.log(scroll);
 
-    if (scroll >= 160) {
+    if (scroll >= 135) {
         $(".main-menu").parent().addClass("header-fixed");
     } else {
         $(".main-menu").parent().removeClass("header-fixed");
     }
 });
-});
+
 var t;
 function up() {
-    var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-    if(top > 0) {
-        window.scrollBy(0,-100);
-        t = setTimeout('up()',20);
-    } else clearTimeout(t);
-    return false;
+   var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+   if(top > 0) {
+       window.scrollBy(0,-100);
+       t = setTimeout('up()',20);
+   } else clearTimeout(t);
+   return false;
 }
 
-$('#scrolltotop').on('click', function(){
-    up();
-    return false;
-})
+$('#scrolltotop').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 500);
+return false;
+});
 
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 300) {
+        $('#scrolltotop').fadeIn();
+    } else {
+        $('#scrolltotop').fadeOut();
+    }
+});
+
+});
