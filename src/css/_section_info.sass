@@ -1,20 +1,22 @@
 .info
-	margin: 5px 0 30px 0
+	margin: 5px 0 30px
 	
 .info_flex
 	display: flex
 	justify-content: space-between
-.name_info
-	display: flex
-	justify-content: space-around
+	@media (max-width: 870px)
+		flex-direction: column
+		justify-content: center
+
 .top_title
-	width: 100%
-.name_info p
+	text-align: center
+	background-color: #fff
 	color: $color_nav
 	font-size: 22px
 	font-weight: bold
-.name_info p:hover
-	color: $color_a_hover
+	text-transform: uppercase
+	&:hover
+		color: $color_a_hover
 
 .info_flex .wrapper	
 	width: 31%
@@ -22,61 +24,78 @@
 	border: 1px solid $background_pink
 	color: $primary-color
 	background-color: $background_color_section_info
-
-.info_flex .wrapper:hover 
-	border: 1px solid $color_a_hover
 	border-radius: 5px
+	@media (max-width: 870px)
+		width: 80%
+		margin: 25px auto
+		padding-bottom: 15px
+	&:hover
+		border: 1px solid $color_a_hover
+
 .title
 	font-size: 20px
-.title:hover a
-	color: $color_a_hover
+	&:hover a
+		color: $color_a_hover
 
 .title, .description
 	text-align: center
 
 .info-image
-	height: 150px
+	width: 250px
+	height: 180px
+	margin: 0 auto
 	background: url(../img/news_1.jpg) 0 0 no-repeat
 	background-size: cover
-
+	&:hover
+		transition: scale(1.9)
+	@media (max-width: 870px)
+		margin-left: 15px
+		float: left
+		
 .description
 	padding: 20px 0
 
-.description:hover a
-	color: $color_a_hover
-
 .news .description
 	position: relative
-
-.news .description:after
-	content: " "
-	position: absolute
-	top: -60px
-	left: 0
-	border: 30px solid transparent
-	border-bottom: 30px solid $background_color_section_info
+	&:after
+		content: " "
+		position: absolute
+		top: -60px
+		left: 24px
+		border: 30px solid transparent
+		border-bottom: 30px solid $background_color_section_info
+	@media screen and (max-width: 870px) and (min-width: 670px)
+		&:after
+			// left: 9999px
+			background-color: red
 
 .scientific_collections .description
 	position: relative
+	&:after
+		content: " "
+		position: absolute
+		top: -60px
+		left: 50%
+		margin-left: -30px
+		border: 30px solid transparent
+		border-bottom: 30px solid $background_color_section_info
+	@media screen and (max-width: 870px) and (min-width: 670px)
+		&:after
+			// left: 9999px
+			background-color: red
 
-.scientific_collections .description:after
-	content: " "
-	position: absolute
-	top: -60px
-	left: 50%
-	margin-left: -30px
-	border: 30px solid transparent
-	border-bottom: 30px solid $background_color_section_info
 .collections .description
 	position: relative
+	&:after
+		content: " "
+		position: absolute
+		top: -60px
+		right: 24px
+		border: 30px solid transparent
+		border-bottom: 30px solid $background_color_section_info
+		@media screen and (min-width: 670px) and (max-width: 870px)
+			right: 9999px
 
-.collections .description:after
-	content: " "
-	position: absolute
-	top: -60px
-	right: 0
-	border: 30px solid transparent
-	border-bottom: 30px solid $background_color_section_info
 .info a 
 	text-decoration: none
 	color: $primary-color
