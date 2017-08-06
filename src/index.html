@@ -187,14 +187,18 @@
 
 		<section class="feedback">
 			<div class="wrap">
-				 <div class="flex_feedback">
+				<div class="flex_feedback">
 					<div class="inputs">
-						 <form action="#" method="post">
+				  	<form action="#" method="post">
 							<p>Спланувати візит:</p>
-							<input type="text" name="name" placeholder="Ім'я" required>
-							<input type="email" name="email" placeholder="Email" required>
-							<p>Дата:<input type="text" id="datepicker" required></p>
-							<textarea name="comment" id="comment" cols="40" rows="10" placeholder="Залишити коментар"></textarea>
+							<div class="inputs_left">
+								<input type="text" name="name" placeholder="Ім'я" required>
+								<input type="email" name="email" placeholder="Email" required>
+								<p class="inputs_date">Дата:<input type="text" id="datepicker" required></p>
+							</div>
+							<div class="inputs_right">
+								<textarea name="comment" id="comment" cols="40" rows="10" placeholder="Залишити коментар"></textarea>
+							</div>
 							<input type="submit" name="name" value="Відправити">
 						</form>
 					</div>
