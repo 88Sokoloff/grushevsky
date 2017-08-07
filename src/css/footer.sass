@@ -6,17 +6,20 @@ footer img
   display: inline-block
   width: 100px
   height: 53px
+
 footer li
   display: inline-block
   list-style: none
+
 .social
   float: right
   &:after
     content: ''
     clear: both
-  @media(max-width: 960px)
-    margin 0 auto
-    float left
+footer .wrap
+  @media(max-width: 420px)
+    width: 80%
+  
 footer
   .social a
     display: inline-block
@@ -35,44 +38,53 @@ footer
 
   .social a:hover
     opacity: 1
+
 .flexbox_footer_bottom
   display: flex
   justify-content: space-between
   width: 100%
   @media(max-width: 960px)
    display: none
+
 .footer_left
   display: flex
   flex-direction: column
   @media(max-width: 960px)
     width: 65%
-.footer_right
-  width: 100%
-  margin-top: 10px
+
 .footer_contact
   width: 100%
-  text-align: right
+
 .copyright
   display: block
+  padding: 11px 0 0 0
+
 .footer_old_site, .e_archive
-	text-align: right
-.sponsors	a, .copyright a, .footer_old_site a, .footer_contact a, .e_archive a, .last a
+  text-align: right
+
+.sponsors a, .copyright a, .footer_old_site a, .footer_contact a, .e_archive a, .last a
   text-decoration: none
   color: $color_hover
   font-size: $font_size_a
 
-.copyright , .footer_old_site , .footer_contact, .e_archive, .sponsors .last  a
-	a:hover 
-  	color: $color_a_hover
+.copyright , .footer_old_site , .footer_contact, .e_archive, .sponsors
+  a:hover 
+    color: $color_a_hover
+    
 #scrolltotop
   position: fixed
-  bottom: 50px
-  right: 50px
+  bottom: 25px
+  right: 25px
   display: none
+  
 .imgop
   width: 40px
   height: 40px
   opacity: 0.5
+  transition: all .3s
+  &:hover
+    transform: scale(1.5)
+
 .footer_partners
   margin-top: 0px
   width: 92%
@@ -81,6 +93,7 @@ footer
   padding-left: 0px
   background: none
   direction: left
+
 .part a
   padding: 30px
   border-right: 1px solid #ffffff
@@ -94,17 +107,11 @@ footer
 .part a:hover 
     color: $color_a_hover
 
-.e_archive
+.footer_right
   width: 100%
-  @media(max-width: 960px)
-    flex-direction: column
+
 .last
   display: none
   @media(max-width: 960px)
     display: block
     text-align: center
-    width: 80%
-    margin: 0 auto
-.last a:hover
-  @media(max-width: 960px)
-    color: $color_a_hover  
