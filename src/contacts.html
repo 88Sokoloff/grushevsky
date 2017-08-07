@@ -38,13 +38,13 @@
 
 						</form>
 					</div>
-												<div class="all_menu_mob">        
-		        <div class="container" onclick="myFunction(this)">
+						<div class="all_menu_mob">        
+		     		  <div class="container" onclick="myFunction(this)">
 		            <div class="btn bar1"></div>
 		            <div class="btn bar2"></div>
 		            <div class="btn bar3"></div>
-		        </div>
-		        <ul class="main-menu-mob" >
+		        	</div>
+		        	<ul class="main-menu-mob" >
 		            <li><a href="index.html">Головна</a></li>
 		            <li class="dropdown-menu"><a href="about_history.html" class="parent">Про музей</a>
 		                <ul class="sub-menu-mob">
@@ -110,7 +110,7 @@
 	    	</ul>
 		</nav>
 		<div class="wrap">
-	<div class="contact_container_one">
+			<div class="contact_container_one">
 				
 					<div class="contact_mode">
 						<h5>Режим роботи</h5>
@@ -172,12 +172,16 @@
 			<div class="wrap">
 				 <div class="flex_feedback">
 					<div class="inputs">
-						 <form action="#" method="post">
+				  	<form action="#" method="post">
 							<p>Спланувати візит:</p>
-							<input type="text" name="name" placeholder="Ім'я" required>
-							<input type="email" name="email" placeholder="Email" required>
-							<p>Дата:<input type="text" id="datepicker" required></p>
-							<textarea name="comment" id="comment" cols="40" rows="10" placeholder="Залишити коментар"></textarea>
+							<div class="inputs_left">
+								<input type="text" name="name" placeholder="Ім'я" required>
+								<input type="email" name="email" placeholder="Email" required>
+								<input type="text" id="datepicker" placeholder="Дата:" required>
+							</div>
+							<div class="inputs_right">
+								<textarea name="comment" id="comment" cols="40" rows="10" placeholder="Залишити коментар"></textarea>
+							</div>
 							<input type="submit" name="name" value="Відправити">
 						</form>
 					</div>
@@ -188,7 +192,8 @@
 					</div>
 				</div>
 			</div>
-		</section>		<footer>
+		</section>		
+		<footer>
 				<div class="wrap"> 			          
 	            	<a href="index.html" class="footer_logo">
 	            		<img  src="img/logo_footer.png"  alt="Grushevsky museum Logo"></a>
