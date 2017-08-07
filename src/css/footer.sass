@@ -2,12 +2,10 @@ footer
   padding: 15px 0 5px 0
   background: $background_footer
 
-.footer_logo
-  width: 50px
-
 footer img
   display: inline-block
   width: 100px
+  height: 53px
 
 footer li
   display: inline-block
@@ -41,24 +39,27 @@ footer
 .flexbox_footer_bottom
   display: flex
   justify-content: space-between
-  align-items: flex-end
   width: 100%
+  @media(max-width: 960px)
+   display: none
+
 .footer_left
   display: flex
   flex-direction: column
-  width: 60%
-.sponsors 
-  display: inline
-  height: 15px
+  @media(max-width: 960px)
+    width: 65%
+
+.footer_contact
+  width: 100%
+
 .copyright
   display: block
-  margin: 0
-  padding: 20px 0 0 0
+  padding: 11px 0 0 0
 
-.footer_old_site, .e_archive 
+.footer_old_site, .e_archive
 	text-align: right
 
-.sponsors	a, .copyright a, .footer_old_site a, .footer_contact a, .e_archive a, 
+.sponsors	a, .copyright a, .footer_old_site a, .footer_contact a, .e_archive a, .last a
   text-decoration: none
   color: $color_hover
   font-size: $font_size_a
@@ -77,3 +78,39 @@ footer
   width: 40px
   height: 40px
   opacity: 0.5
+
+.footer_partners
+  margin-top: 0px
+  width: 92%
+  height: 30px
+  line-height: 25px
+  padding-left: 0px
+  background: none
+  direction: left
+
+.part a
+  padding: 30px
+  border-right: 1px solid #ffffff
+  color: #ffffff
+  font-size: 22px
+  font-family: arial
+  text-decoration: none
+  &:last-child
+    border-right: none
+
+.part a:hover 
+    color: $color_a_hover
+
+.e_archive
+  width: 100%
+  @media(max-width: 960px)
+    flex-direction: column
+
+.footer_right
+  width: 100%
+
+.last
+  display: none
+  @media(max-width: 960px)
+    display: block
+    text-align: center
