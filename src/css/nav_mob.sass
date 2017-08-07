@@ -3,8 +3,6 @@
   top: 4%
   right: 0.5%
   z-index: 20
-  overflow-y: scroll;
-  overflow-x: hidden;
   @media(min-width: 960px)
     display: none
   
@@ -21,7 +19,10 @@
 .all_menu_mob .container
   display: inline-block
   cursor: pointer
-  float: right 
+  float: right
+  margin-right: 10px
+
+
 
 .change
   .bar1
@@ -48,6 +49,9 @@
   list-style: none
   text-transform: uppercase
   text-align: center
+  overflow-y: scroll
+  overflow-x: hidden
+  max-height: 600px
   @media(max-width: 760px)
       width: 500px
   @media(max-width: 560px)

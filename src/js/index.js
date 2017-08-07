@@ -4,7 +4,6 @@ $(document).ready(function(){
         owl.owlCarousel({
             items:1,
             loop:true,
-            margin:10,
             autoplay:true,
             autoplayTimeout:7000,
             autoplayHoverPause:true
@@ -117,6 +116,7 @@ $('.parent').on('click tap', function(){
     else{
         $(this).parent().addClass('opened');
     }
+     return false;
  });
                 // скрипт для значка меню
 function myFunction(x) {
