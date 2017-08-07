@@ -78,6 +78,9 @@ footer
   width: 40px
   height: 40px
   opacity: 0.5
+  transition: all .3s
+  &:hover
+    transform: scale(1.5)
 
 .footer_partners
   margin-top: 0px
@@ -100,11 +103,6 @@ footer
 
 .part a:hover 
     color: $color_a_hover
-
-.e_archive
-  width: 100%
-  @media(max-width: 960px)
-    flex-direction: column
 
 .footer_right
   width: 100%
