@@ -8,14 +8,19 @@ body
 .header_top
   color: #d6d6d6
   background-color: $background_footer
+  @media(max-width: 960px)
+    margin: 0 auto
 
 .header_top .wrap 
   display: flex
   justify-content: space-between
+  @media(max-width: 960px)
+    display: block
 
 .header_right_block
   display: flex
   align-items: center
+ 
 
 @media screen and (max-width: 960px)
   .header_right_block
@@ -31,9 +36,14 @@ body
 header
   background-color: $background_pink
 
-.inline, .lang_block
+.inline, .lang_block, .del
   display: inline-block
-
+.del
+  @media(max-width: 960px)
+    display: none 
+.header_top_info
+  @media(max-width: 640px)
+    display: none
 .header_top a
   color: #d6d6d6
   text-decoration: none
@@ -69,7 +79,7 @@ header form
 .search
   display: flex
   justify-content: center
-  margin-left: 30px
+  margin-left: 10px
   .input
     padding: 10px
     border: none
@@ -92,6 +102,13 @@ header form
     
 .search_form 
   border-bottom: 1px solid $input_border_color
+  width: 40%
+  @media(max-width: 960px)
+    width: 70%
+  @media(max-width: 500px)
+    float: right
+    margin-right: 0
+
 .search_form:focus 
   border-bottom: 1px solid $primary-color 
   background: #f2f2f2
@@ -111,20 +128,32 @@ header form
 
 
 
-.sprites
+header .sprites
   margin-left: 20px
+  padding: 0
+  @media(max-width: 960px)
+    margin-right: 30%
+    margin-left: 2px
+  @media(max-width: 500px)
+    display: none
+
 
 header
   .header_social
     li
       list-style: none
       display: inline-block
+      @media(max-width: 960px)
+        display: block 
     a
       display: inline-block
       opacity: 0.5
       background-size: cover
-      width: 32px
-      height: 32px
+      width: 33px
+      height: 33px
+      @media(max-width: 960px)
+        width: 25px
+        height: 25px
   .social_youtube
     background: url(../img/youtube.svg) 0 0 no-repeat
   .social_insta
