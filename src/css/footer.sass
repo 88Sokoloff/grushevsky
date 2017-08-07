@@ -40,11 +40,17 @@ footer
   display: flex
   justify-content: space-between
   width: 100%
+  @media(max-width: 960px)
+   display: none
 
 .footer_left
   display: flex
   flex-direction: column
-  width: 60%
+  @media(max-width: 960px)
+    width: 65%
+
+.footer_contact
+  width: 100%
 
 .copyright
   display: block
@@ -53,7 +59,7 @@ footer
 .footer_old_site, .e_archive
 	text-align: right
 
-.sponsors	a, .copyright a, .footer_old_site a, .footer_contact a, .e_archive a, 
+.sponsors	a, .copyright a, .footer_old_site a, .footer_contact a, .e_archive a, .last a
   text-decoration: none
   color: $color_hover
   font-size: $font_size_a
@@ -74,8 +80,8 @@ footer
   opacity: 0.5
 
 .footer_partners
-  margin-top: 10px
-  width: 85%
+  margin-top: 0px
+  width: 92%
   height: 30px
   line-height: 25px
   padding-left: 0px
@@ -94,3 +100,17 @@ footer
 
 .part a:hover 
     color: $color_a_hover
+
+.e_archive
+  width: 100%
+  @media(max-width: 960px)
+    flex-direction: column
+
+.footer_right
+  width: 100%
+
+.last
+  display: none
+  @media(max-width: 960px)
+    display: block
+    text-align: center
