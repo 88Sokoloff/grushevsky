@@ -16,7 +16,10 @@ footer li
   &:after
     content: ''
     clear: both
-
+footer .wrap
+  @media(max-width: 420px)
+    width: 80%
+  
 footer
   .social a
     display: inline-block
@@ -57,16 +60,16 @@ footer
   padding: 11px 0 0 0
 
 .footer_old_site, .e_archive
-	text-align: right
+  text-align: right
 
-.sponsors	a, .copyright a, .footer_old_site a, .footer_contact a, .e_archive a, .last a
+.sponsors a, .copyright a, .footer_old_site a, .footer_contact a, .e_archive a, .last a
   text-decoration: none
   color: $color_hover
   font-size: $font_size_a
 
 .copyright , .footer_old_site , .footer_contact, .e_archive, .sponsors
-	a:hover 
-  	color: $color_a_hover
+  a:hover 
+    color: $color_a_hover
     
 #scrolltotop
   position: fixed
@@ -78,10 +81,20 @@ footer
   width: 40px
   height: 40px
   opacity: 0.5
+<<<<<<< HEAD
+<<<<<<< HEAD
   transition: all .3s
   &:hover
     transform: scale(1.175)
 
+=======
+>>>>>>> 321-19-00
+=======
+  transition: all .3s
+  &:hover
+    transform: scale(1.5)
+
+>>>>>>> 321-19-00
 .footer_partners
   margin-top: 0px
   width: 92%

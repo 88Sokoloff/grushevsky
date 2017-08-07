@@ -1,46 +1,43 @@
 // CONTACT_CONTAINER //
-
 .contact_container_one
   background-color: #fff
   display: flex
   justify-content: space-between
-  padding: 5px 0 0 0
-
+  @media(max-width: 960px)
+    flex-direction: column
+    text-align: center
 h5
   font-family: $font_primary
   font-size: 18px
   color: #940007
   text-align: center
-
 .contact_container_one p
   font-family: $font_primary
   color: $primary-color
   font-size: 14px
   width: 450px
-
+  @media(max-width: 960px)
+    margin: 0 auto
 .contact_location p
   font-size: 14px
   text-indent: 30px
   color: $primary-color
   font-family: $font_primary
-
+  text-align: center
+  @media(max-width: 960px)
+    text-align: center
 .contact_container_two
   background-color: #fff
   display: flex
   justify-content: space-between
   padding: 5px 0 0 0
-
 .contact_container_two li
   font-family: $font_primary
   color: $primary-color
   font-size: 14px
   width: 100%
-
 .contact_container_two i
   color: #41587D
-
 .contact_container_two p
   color: #940007
 // END CONTACT_INFO //
-
-// FEEDBACK//
