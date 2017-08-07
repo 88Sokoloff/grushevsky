@@ -117,6 +117,7 @@ $('.parent').on('click tap', function(){
     else{
         $(this).parent().addClass('opened');
     }
+    return false;
  });
                 // скрипт для значка меню
 function myFunction(x) {
