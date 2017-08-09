@@ -4,34 +4,47 @@ header
   a
     color: $background_pink
     &:hover
-      color: $color_a_hover
+      color: #50382f
   form
     padding: 0px
 
 .header_top
-  color: #d6d6d6
-  background-color: $background_footer
+  color: $background_pink
+  background-color: $pink_color
+  padding: 7px 0px
+  letter-spacing: 0.1px
+  margin-bottom: 6px
   @media(max-width: 960px)
     margin: 0 auto
-
-.header_top .wrap
-  display: flex
-  justify-content: space-between
-  @media(max-width: 960px)
-    display: block
+  a
+      color: $background_pink
+      text-decoration: none
+      &:hover
+        color: #50382f
+  .wrap
+    display: flex
+    justify-content: space-between
+    .header_top_old_site
+      margin-left: auto
+      a
+        color: #50382f
+    .header_top_eng
+      @media(max-width: 960px)
+        margin-right: 70px
 
 .header_right_block
   display: flex
   align-items: center
-  @media(max-width: 500px)
-    padding-right: 20%
- 
-.header_top 
-  padding: 5px 0px
+  justify-content: flex-end
 
-.lang_block a 
-  margin: 0 0 0 10px
-  text-transform: uppercase
+.lang_block
+  div
+    a 
+      margin: 0 0 0 3px
+    &:first-of-type
+      a 
+        margin-left: 15px
+
 
 .inline, .lang_block, .del
   display: inline-block
@@ -40,18 +53,16 @@ header
     display: none 
 .header_top_info
   @media(max-width: 640px)
-    display: none
-.header_top a
-  color: #d6d6d6
-  text-decoration: none
-.header_top a:hover
-  color: $color_a_hover  
+    display: none 
 
 .header_container
   display: flex
   justify-content: space-between
-  align-items: center;
-  padding: 5px 0 0 0
+  align-items: center
+  padding: 5px 0 1px 0
+  .logo
+    img
+      height: 80px
 
 .header_contact
   width: 400px
@@ -65,7 +76,7 @@ header
   
 .search
   position: relative
-  margin-left: 10px
+  margin-left: 5px
   input
     padding: 10px 30px 10px 0
     border: none
@@ -73,20 +84,23 @@ header
     outline: none
     width: 100%
     height: 30px
-  .search_img
-    display: block
-    width: 20px
-    height: 20px
+    font-size: 13px
+  button
+    background: none
+    border: none
+    display: inline-block
+    width: 15px
+    height: 15px
     position: absolute
-    top: 5px
+    top: 8px
     right: 5px
     background: url(../img/search.svg) 0 0 no-repeat
     background-size: cover
 
 .search_form 
   border-bottom: 1px solid $input_border_color
-  width: 40%
-  @media(max-width: 500px)
+  width: 200px
+  @media(max-width: 620px)
     display: none
 
 .search_form:focus 
@@ -107,28 +121,24 @@ header
       opacity: 0.8
 
 header .sprites
-  margin-left: 20px
   padding: 0
-  @media(max-width: 960px)
-    margin-right: 30%
-    margin-left: 2px
+  ul
+    padding-left: 30px
 
 header
   .header_social
     li
       list-style: none
       display: inline-block
-      @media(max-width: 960px)
-        display: block 
     a
       display: inline-block
       opacity: 0.5
-      background-size: cover
+      background-size: 90%
       width: 33px
       height: 33px
       @media(max-width: 960px)
-        width: 25px
-        height: 25px
+        width: 30px
+        height: 30px
   .social_youtube
     background: url(../img/youtube.svg) 0 0 no-repeat
   .social_insta
@@ -144,3 +154,7 @@ header
   @media(max-width: 430px)
     display: block
     padding: 5px
+    .search
+      display: flex
+      margin: 0 auto
+      align-items: center

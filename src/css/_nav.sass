@@ -1,5 +1,4 @@
 nav
-  padding-bottom: 2px
   background: #FFF7ED
   border-bottom: 1px solid $primary-color
   border-top: 1px solid $primary-color
@@ -22,7 +21,7 @@ nav
     -moz-transition: all 5s ease-in-out
     -o-transition: all 5s ease-in-out
     -ms-transition: all 5s ease-in-out
-    &:nth-of-type(2):after, &:nth-of-type(5):after
+    &.menu-item-has-children:after
       content: ""
       width: 0
       height: 0
@@ -35,7 +34,7 @@ nav
       border-style: solid
       border-color: #8c5454 transparent
       cursor: pointer
-    &:nth-of-type(2) .sub-menu > li:nth-of-type(2):after
+    &.menu-item-has-children .sub-menu > li.menu-item-has-children:after
       content: ""
       width: 0
       height: 0
@@ -57,7 +56,7 @@ nav
     background: #FFF7ED
     transition: all 0.2s ease-in-out
     @media(max-width: 768px)
-      padding: 12px 16px;
+      padding: 12px 16px
     &:hover
       li
       background: #D0A898
@@ -76,23 +75,22 @@ nav
     a
       border: 1px solid #c9c9c9
       margin-bottom: -1px
+      .sub-menu
+        display: none
+        top: 95%
+        z-index: 15
+        margin: 0
+        padding: 0
+        list-style: none
   > li:hover >
     .sub-menu
       display: block
 
-.sub-menu_2
-  display: none
-  top: 95%
-  z-index: 15
-  margin: 0
-  padding: 0
-  list-style: none
-
 .main-menu .sub-menu li
   position: relative
-  &:hover .sub-menu_2
+  &:hover .sub-menu
     display: block
-  .sub-menu_2
+  .sub-menu
     position: absolute
     width: 240px
     left: 200px

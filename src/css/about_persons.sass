@@ -18,24 +18,25 @@
 		padding: 0
 	@media (max-width: 600px)
 		display: block
+	.about_person_info_first
+		width: 60%
+		margin: 30px
+		@media (max-width: 600px)
+			margin: 0 auto
+			text-align: center
 	&:last-of-type
 		border: 0
-.about_person_info_first
-	width: 60%
-	margin: 30px
-	@media (max-width: 600px)
-		margin: 0 auto
-		text-align: center
+		flex-direction: row-reverse
+		.about_person_info_first
+			width: 60%
+			margin: 30px
+			text-align: right
+			@media (max-width: 600px)
+				margin: 0 auto
+				text-align: center
 
 .person_foto
 	margin: 30px	
 	@media (max-width: 600px)
 		width: 200px
 		margin: 0 auto
-.about_person_info_second
-	width: 60%
-	margin: 30px
-	text-align: right
-	@media (max-width: 600px)
-		margin: 0 auto
-		text-align: center
