@@ -9,26 +9,85 @@
 	background: url(../img/news_1.jpg) 50% 50% no-repeat
 	
 .article--text
+	line-height: 1.7
 	text-align: center
 	width: 80%
 	margin: 25px auto 45px
+	@media (max-width: 700px)
+		width: 95%
+
+.read_more
+	font-size: 18px
+	font-weight: normal
+	&--item
+		position: relative
+		width: 20%
+		height: 133px
+		margin: 0 5px
+		background: url(../img/news_1.jpg) 50% 50% no-repeat
+		background-size: cover
+		color: #222
+		overflow: hidden
+		&:hover
+			box-shadow: 0 0 8px 3px $primary-color
+		p
+			position: absolute
+			bottom: -200px
+			text-align: center
+			background: rgba(256,256,256,.5)
+		&:hover p
+			bottom: -45px
+			transition: .4s
+		@media (max-width: 1020px)
+			width: 45%
+			margin-bottom: 25px
+	&--link
+		display: block
+		text-decoration: none
+		text-align: center
+		color: #222
+		font-size: 16px
+		font-weight: bold
+		background: rgba(256,256,256,.5)
+
 
 .article_form
 	width: 75%
 	margin: 0 auto
 .article_recall
 	display: block
+	input
+		float: left
+		margin: 30px 0
+		padding: 10px
+		width: 40%	
+		border: 0
+		border-bottom: 1px solid $input_border_color
+		background: none
+		outline: none
+		font-size: $text_size_input
+		&[type="email"]
+			float: right
+		@media (max-width: 500px)
+			float: none
+			width: 100%
+			box-sizing: border-box
+			margin: 10px 0
+
 .share
 	width: 20%
 	height: 30px
-	margin: 0 100px 25px 
+	margin: 0 auto 
+	border: none
 	cursor: pointer
-.share_fb
-	background: url(../img/share_fb.svg) 50% 50%
-	background-size: cover
-.share_twitter
-	background: url(../img/share_twitter.svg) 50% 50%
-	background-size: cover
+	&_fb
+		background: url(../img/share_fb.svg) 50% 50%
+		background-size: cover
+	&_twitter
+		background: url(../img/share_twitter.svg) 50% 50%
+		background-size: cover
+	&:hover
+		box-shadow: 0 0 8px 3px $color_a_hover
 
 #article_comment
 	width: 100%

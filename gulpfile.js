@@ -61,3 +61,25 @@ gulp.task('server', ['img', 'css', 'scripts', 'html'], function() {
 });
 
 gulp.task('default', ['server']);
+
+gulp.task('build', function() {
+    // css
+    gulp.src('src/css/main.sass')
+    .pipe(sass())
+     // собираем stylus
+   // .pipe(myth()) // добавляем префиксы - http://www.myth.io/
+    //.pipe(csso()) // минимизируем css
+    .pipe(gulp.dest('./build/css/')) // записываем css
+
+    // js
+    gulp.src('./js/*.js')
+        .pipe(concat('index.js'))
+       // .pipe(uglify())
+        .pipe(gulp.dest('./build/js'));
+
+    // image
+    gulp.src('./img/**/*')
+       // .pipe(imagemin())
+        .pipe(gulp.dest('./build/img'))
+
+});

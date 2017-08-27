@@ -1,16 +1,31 @@
+@font-face
+	font-family: Diaria
+	src: url(../fonts/Diariasansproregular.ttf)
+
 $background_pink: #FFF7ED
 $background_footer: #917E68
 $color_hover: #FFF7ED
 $primary-color: #917E68
+$pink_color: #d1a999
 $color_nav: #917E68
-$font_primary: Arial, sans-serif
+$font_primary: Diaria, sans-serif
 $input_border_color: #D1A999
 $font_size_a: 16px
-$color_a_hover: #88aae0
+$color_a_hover: #c6daf9
 $background_color_section_info: #FFF7ED
 $text_size_input: 14px
 
-body
+@mixin transition($transition)
+    -moz-transition:    $transition
+    -o-transition:      $transition
+    -webkit-transition: $transition
+    transition:         $transition
+
+a
+	&:hover
+		@include transition(0.3s)
+
+html, body
   padding: 0
   margin: 0
   font-family: $font_primary
@@ -19,8 +34,10 @@ body
   
 .wrap
 	width: 960px
+	min-width: 280px
 	margin: 0 auto
-	@media(max-width: 780px)
+	@media(max-width: 960px)
+		width: 100%
 
 .section_header
 	font-size: 22px
@@ -47,7 +64,10 @@ body
 	display: flex
 	justify-content: space-between
 	flex-wrap: wrap
-
+.flex_conteiner--sp_a
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
 
 .pic_substrate
 	position: absolute

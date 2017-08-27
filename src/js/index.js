@@ -88,3 +88,21 @@ $(window).scroll(function(){
 });
 
 });
+
+
+
+$('.parent').on('click tap', function(){
+    if($(this).parent().hasClass('opened')){
+        $(this).parent().removeClass('opened');
+    }
+    else{
+        $(this).parent().addClass('opened');
+    }
+    return false;
+ });
+                // скрипт для значка меню
+function myFunction(x) {
+    x.classList.toggle("change");
+    $(".main-menu-mob").toggle()
+    }
+

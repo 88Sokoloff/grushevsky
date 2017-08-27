@@ -2,12 +2,10 @@ footer
   padding: 15px 0 5px 0
   background: $background_footer
 
-.footer_logo
-  width: 50px
-
 footer img
   display: inline-block
   width: 100px
+  height: 53px
 
 footer li
   display: inline-block
@@ -18,7 +16,10 @@ footer li
   &:after
     content: ''
     clear: both
-
+footer .wrap
+  @media(max-width: 980px)
+    width: 95%
+  
 footer
   .social a
     display: inline-block
@@ -41,39 +42,86 @@ footer
 .flexbox_footer_bottom
   display: flex
   justify-content: space-between
-  align-items: flex-end
   width: 100%
+  @media(max-width: 800px)
+    display: block
+
 .footer_left
+  display: -ms-flex
   display: flex
   flex-direction: column
-  width: 60%
-.sponsors 
-  display: inline
-  height: 15px
+  @media(max-width: 800px)
+    display: block
+    text-align: center
+
+.footer_contact
+  width: 100%
+  @media(max-width: 800px)
+    display: block
+    text-align: center
+
 .copyright
   display: block
-  margin: 0
-  padding: 20px 0 0 0
+  padding: 11px 0 0 0
+.footer-right
+  @media(max-width: 800px)
+    width: 100%
 
-.footer_old_site, .e_archive 
-	text-align: right
 
-.sponsors	a, .copyright a, .footer_old_site a, .footer_contact a, .e_archive a, 
+.footer_old_site, .e_archive, .footer_contact
+  text-align: right
+  @media(max-width: 800px)
+    text-align: center
+
+.sponsors a, .copyright a, .footer_old_site a, .footer_contact a, .e_archive a, .last a
   text-decoration: none
   color: $color_hover
   font-size: $font_size_a
 
 .copyright , .footer_old_site , .footer_contact, .e_archive, .sponsors
-	a:hover 
-  	color: $color_a_hover
+  a:hover 
+    color: $color_a_hover
     
 #scrolltotop
   position: fixed
-  bottom: 50px
-  right: 50px
+  bottom: 25px
+  right: 25px
   display: none
   
 .imgop
   width: 40px
   height: 40px
   opacity: 0.5
+  transition: all .3s
+  &:hover
+    transform: scale(1.175)
+
+.footer_partners
+  margin-top: 0px
+  width: 92%
+  height: 30px
+  line-height: 25px
+  @media(max-width: 800px)
+    line-height: 15px
+    width: 95%
+  padding-left: 0px
+  background: none
+  direction: left
+
+.part a
+  padding: 30px
+  border-right: 1px solid #ffffff
+  color: #ffffff
+  font-size: 22px
+  font-family: arial
+  text-decoration: none
+  &:last-child
+    border-right: none
+
+.part a:hover 
+    color: $color_a_hover
+
+.footer_right
+  width: 100%
+
+
